@@ -117,7 +117,6 @@ hr {
 }
 
 .search-bar button {
-  /* border: 1px solid white; */
   width: 90px;
   height: 90px;
   border: none;
@@ -153,11 +152,11 @@ hr {
   width: 1400px;
   height: 620px;
   background-repeat: no-repeat;
-  background-image: url("./assets/jpg/dayy.webp"); /* Replace with actual image path */
+  background-image: url("./assets/jpg/dayy.webp");
 }
 .night {
   width: 1400px;
   height: 620px;
   background-repeat: no-repeat;
-  background-image: url("./assets/jpg/66-night.jpg"); /* Replace with actual image path */
+  background-image: url("./assets/jpg/66-night.jpg");
 }
