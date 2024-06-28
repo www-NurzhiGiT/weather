@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Oxygen:wght@300;400;700&display=swap");
+/* roboto */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  width: 1510px;
+  height: 700px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 14px 22px 30px rgba(0, 0, 0, 2.2);
+}
+
+.weather-card {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: end;
+}
+
+.weather-main {
+  position: relative;
+  right: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 800px;
+}
+.weather-main .sector-one {
+  text-align: end;
+}
+.weather-main div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* температура воздуха \ weather temp */
+.weather-temp {
+  font-size: 72px;
+  margin: 0;
+  font-family: Roboto;
+}
+/* город \ city */
+.weather-city {
+  margin: 0;
+  font-size: 50px;
+  font-family: Comfortaa;
+}
+/* время \ time */
+.weather-date {
+  margin: 0;
+  min-width: auto;
+  font-family: Comfortaa;
+}
+/* типа облачно  не облачно \ cloudy   */
+.weather-desc {
+  margin: 0;
+  font-family: Comfortaa;
+}
+/* календарь 29,06,2024 */
+.calendarData {
+  margin: 0;
+  font-family: Comfortaa;
+}
+/* ========= */
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 30px;
+}
+hr {
+  width: 450px;
+  background: rgba(200, 200, 200, 0.5);
+}
+.search-bar {
+  width: 500px;
+  height: 100%;
+  position: relative;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  position: relative;
+  left: 20px;
+  width: 300px;
+  height: 25px;
+  flex: 1;
+  font-size: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 35px;
+  background: none;
+  color: #fff;
+  outline: none;
+}
+
+.search-bar button {
+  /* border: 1px solid white; */
+  width: 90px;
+  height: 90px;
+  border: none;
+  padding: 12px 0px;
+  cursor: pointer;
+  font-size: 40px;
+  background: orange;
+  position: relative;
+  left: 90px;
+  bottom: 10px;
+}
+.hhr {
+  width: 340px;
+  position: absolute;
+  left: 35px;
+  bottom: 540px;
+}
+.location-list {
+  margin-top: 20px;
+}
+
+.location-list ul {
+  list-style: none;
+  padding: 0 30px;
+}
+
+.location-list li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.day {
+  width: 1400px;
+  height: 620px;
+  background-repeat: no-repeat;
+  background-image: url("./assets/jpg/dayy.webp"); /* Replace with actual image path */
+}
+.night {
+  width: 1400px;
+  height: 620px;
+  background-repeat: no-repeat;
+  background-image: url("./assets/jpg/66-night.jpg"); /* Replace with actual image path */
+}
